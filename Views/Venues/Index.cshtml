@@ -1,0 +1,180 @@
+﻿@model IEnumerable<CLD111POETerm1ST10484249.Repository.Models.Venue>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@inject UserSessionHelper UserSessionHelper
+@{
+    var user = UserSessionHelper.GetLoggedInUser();
+}
+
+
+<!-- Modal -->
+<section id="about">
+    <div class="container">
+        <div class="row"></div>
+    </div>
+</section>
+
+<main id="main">
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Venues</h2>
+                    <p>Login as an Admin to Add, Edit, or Delete a Venue</p>
+                </div>
+                <div class="col-lg-3">
+                    @if (user != null && user.Role == "Admin")
+                    {
+                        <button class="btn btn-danger rounded-pill" data-bs-toggle="modal" data-bs-target="#addVenueModal">Add Venue</button>
+                    }
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hotels" class="section-with-bg wow fadeInUp">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Venues</h2>
+                <p>Here is a list of our Venues</p>
+            </div>
+
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-lg-4 col-md-6">
+                        <div class="hotel">
+                            <div class="hotel-img">
+                                <img src="@item.ImageUrl" alt="@item.VenueName" class="img-fluid">
+                            </div>
+                            <h3><a asp-action="Details" asp-route-id="@item.VenueId">@item.VenueName</a></h3>
+                            <div class="stars">
+                                <i class="fa fa-users"></i> @item.Capacity
+                                @if (item.VenueStatus.StatusName == "Available")
+                                {
+                                    <i class="fa fa-check-circle"></i> @item.VenueStatus.StatusName
+                                }
+                                else if (item.VenueStatus.StatusName == "Not Available")
+                                {
+                                    <i class="fa fa-times-circle"></i> @item.VenueStatus.StatusName
+                                }
+                                else
+                                {
+                                    <i class="fa fa-question-circle"></i> @item.VenueStatus.StatusName
+                                }
+                            </div>
+                            <p><i class="fa fa-map-marker"></i> @item.Location</p>
+
+                            <div class="row gap-2">
+                                @if (user != null && user.Role == "Admin")
+                                {
+                                    <p>
+                                        <a class="btn btn-default" asp-action="Edit" asp-route-id="@item.VenueId">
+                                            <i class="fa fa-pencil"></i> Edit
+                                        </a>
+                                        @if (item.VenueStatusId == 1)
+                                        {
+                                            <a class="btn btn-default" data-bs-toggle="modal" data-bs-target="#deleteModal" data-venue-id="@item.VenueId" data-venue-name="@item.VenueName">
+                                                <i class="fa fa-trash"></i> Delete
+                                            </a>
+                                        }
+                                    </p>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+</main>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var deleteModal = document.getElementById('deleteModal');
+            deleteModal.addEventListener('show.bs.modal', function (event) {
+                var button = event.relatedTarget;
+                var venueId = button.getAttribute('data-venue-id');
+                var venueName = button.getAttribute('data-venue-name');
+
+                document.getElementById('deleteVenueId').value = venueId;
+                document.getElementById('venueName').textContent = venueName;
+            });
+        });
+    </script>
+}
+
+<!-- Delete Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Delete Venue</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete the venue "<span id="venueName"></span>"?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <form asp-action="Delete" method="post" style="display: inline;">
+                    <input type="hidden" name="id" id="deleteVenueId" />
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Venue Modal -->
+<div class="modal fade" id="addVenueModal" tabindex="-1" aria-labelledby="addVenueModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addVenueModalLabel">Add a Venue</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" asp-action="Create" asp-controller="Venues" enctype="multipart/form-data">
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" name="VenueStatusId" value="1" />
+
+                    <div class="form-group">
+                        <label class="control-label">Venue Name</label>
+                        <input name="VenueName" required class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label">Location</label>
+                        <input name="Location" required class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label">Description</label>
+                        <textarea name="Description" required class="form-control"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label">Capacity</label>
+                        <input name="Capacity" required class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label">Venue Profile Picture</label>
+                        <input type="file" required class="form-control" name="ImageFile" />
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Create</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

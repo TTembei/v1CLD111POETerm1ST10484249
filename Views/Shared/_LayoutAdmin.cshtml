@@ -1,0 +1,212 @@
+﻿@inject UserSessionHelper UserSessionHelper
+@{
+    var user = UserSessionHelper.GetLoggedInUser();
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Admin Portal</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="~/assetsAdmin/materialize/css/materialize.min.css" media="screen,projection" />
+    <!-- Bootstrap Styles-->
+    <link href="~/assetsAdmin/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="~/assetsAdmin/css/font-awesome.css" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link href="~/assetsAdmin/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="~/assetsAdmin/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="~/assetsAdmin/js/Lightweight-Chart/cssCharts.css">
+    <!-- Add toastr CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="~/lib/select2/css/select2.css" rel="stylesheet" />
+    <script src="~/lib/select2/js/select2.js"></script>
+    <script src="~/js/tinymce/tinymce.min.js" referrerpolicy="origin"></script>
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+</head>
+
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle waves-effect waves-dark" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="fa fa-bar"></span>
+                    <span class="fa fa-bar"></span>
+                    <span class="fa fa-bar"></span>
+                </button>
+                <a class="navbar-brand waves-effect waves-dark" asp-area="" asp-controller="Admin" asp-action="Index"><i class="large material-icons">explicit</i> <strong>Event Ease</strong></a>
+                <div id="sideNav" href=""><i class="material-icons dp48">toc</i></div>
+            </div>
+            @if (user != null && user.Role == "Admin")
+            {
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <a class="dropdown-button waves-effect waves-dark" asp-controller="Users" asp-action="UserProfile">Hi, @user.Username | Role: @user.Role</a>
+                    </li>
+                </ul>
+            }
+            else
+            {
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <a class="dropdown-button waves-effect waves-dark" asp-controller="Users" asp-action="Index">Login</a>
+                    </li>
+                </ul>
+            }
+        </nav>
+
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+            
+                <ul class="nav" id="main-menu">
+                    <li>
+                        <a class="active-menu waves-effect waves-dark" asp-area="" asp-controller="Admin" asp-action="Index">
+                            <i class="fa fa-home"></i> Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="waves-effect waves-dark">
+                            <i class="fa fa-calendar"></i> Venues <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a asp-controller="Venues" asp-action="Default" class="waves-effect waves-dark"> Venues</a>
+                            </li>
+                            <li>
+                                <a asp-controller="Admin" asp-action="SearchVenues" class="waves-effect waves-dark">
+                                    <i class="fa fa-search"></i> Venue Advanced Search
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#" class="waves-effect waves-dark">
+                            <i class="fa fa-calendar"></i> Events <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a asp-controller="Events" asp-action="Default" class="waves-effect waves-dark"> Event List</a>
+                            </li>
+                            <li>
+                                <a asp-controller="Admin" asp-action="SearchEvents" class="waves-effect waves-dark">
+                                    <i class="fa fa-search"></i> Event Advanced Search
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#" class="waves-effect waves-dark">
+                            <i class="fa fa-book"></i> Bookings <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a asp-controller="Bookings" asp-action="Default" class="waves-effect waves-dark"> Bookings List</a>
+                            </li>
+                            <li>
+                                <a asp-controller="Admin" asp-action="SearchBookings" class="waves-effect waves-dark">
+                                    <i class="fa fa-search"></i> Bookings Advanced Search
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </div>
+        </nav>
+    </div>
+    <div id="page-wrapper">
+        <div class="header">
+            <h2 class="page-header">
+                @ViewData["Title"]
+            </h2>
+            <ol class="breadcrumb">
+                @if (Convert.ToString(@ViewData["Title"]) != "Home")
+                {
+                    <li> <a asp-controller="Home" asp-action="Index"> Home</a></li>
+                }
+                <li class="active">@ViewData["Title"]</li>
+                @if (Convert.ToString(@ViewData["page"]) != "Index")
+                {
+                    <li><a asp-action="Index">Back</a></li>
+                }
+            </ol>
+        </div>
+
+        <div id="page-inner">
+            @RenderBody()
+            <footer>
+                <p>©2012 - @DateTime.Now.Year All right reserved. by: <a href="">CLD111POE_Term1 _ST10484249</a></p>
+
+            </footer>
+        </div>
+        <!-- /. PAGE INNER  -->
+    </div>
+
+    <script src="~/assetsAdmin/js/jquery-1.10.2.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="~/assetsAdmin/js/bootstrap.min.js"></script>
+    <script src="~/assetsAdmin/materialize/js/materialize.min.js"></script>
+    <!-- Metis Menu Js -->
+    <script src="~/assetsAdmin/js/jquery.metisMenu.js"></script>
+    <!-- Morris Chart Js -->
+    <script src="~/assetsAdmin/js/morris/raphael-2.1.0.min.js"></script>
+    <script src="~/assetsAdmin/js/morris/morris.js"></script>
+    <script src="~/assetsAdmin/js/easypiechart.js"></script>
+    <script src="~/assetsAdmin/js/easypiechart-data.js"></script>
+    <script src="~/assetsAdmin/js/Lightweight-Chart/jquery.chart.js"></script>
+    <!-- DATA TABLE SCRIPTS -->
+    <script src="~/assetsAdmin/js/dataTables/jquery.dataTables.js"></script>
+    <script src="~/assetsAdmin/js/dataTables/dataTables.bootstrap.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#dataTables-example').dataTable();
+        });
+    </script>
+    <!-- Custom Js -->
+    <script src="~/assetsAdmin/js/custom-scripts.js"></script>
+    <script src="~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.min.js"></script>
+    <!-- Add toastr JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script>
+        // Configure toastr options
+        toastr.options = {
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        };
+    </script>
+
+    @RenderSection("Scripts", required: false)
+
+</body>
+
+</html>
+
+
+

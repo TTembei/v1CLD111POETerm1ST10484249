@@ -1,0 +1,125 @@
+﻿@model CLD111POETerm1ST10484249.Repository.Models.Event
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "_LayoutAdmin";
+}
+
+<h1>Create</h1>
+
+<h4>Event</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="VenueId" class="control-label"></label>
+                <select asp-for="VenueId" class ="form-control" asp-items="ViewBag.VenueId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventName" class="control-label"></label>
+                <input asp-for="EventName" class="form-control" />
+                <span asp-validation-for="EventName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventTypeId" class="control-label"></label>
+                <select asp-for="EventTypeId" class ="form-control" asp-items="ViewBag.EventTypeId"></select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Event Start Date</label>
+                <input type="datetime-local" name="EventStartDate" id="EventStartDate" required class="form-control" onchange="checkDateAvailability()" />
+                <span id="startDateError" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Event End Date</label>
+                <input type="datetime-local" name="EventEndDate" id="EventEndDate" required class="form-control" onchange="checkDateAvailability()" />
+                <span id="endDateError" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+<!-- Add this modal for showing conflicts -->
+<div class="modal fade" id="dateConflictModal" tabindex="-1" aria-labelledby="dateConflictModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="dateConflictModalLabel">Date Conflict</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>The selected dates conflict with the following events:</p>
+                <div id="conflictList"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        function checkDateAvailability() {
+            var startDate = document.getElementById('EventStartDate').value;
+            var endDate = document.getElementById('EventEndDate').value;
+            var venueId = document.getElementById('VenueId').value;
+
+            if (startDate && endDate) {
+                var start = new Date(startDate);
+                var end = new Date(endDate);
+
+                if (end <= start) {
+                    document.getElementById('endDateError').textContent = 'End date must be after start date';
+                    return;
+                }
+
+                fetch(`/Events/CheckDateAvailability?startDate=${start.toISOString()}&endDate=${end.toISOString()}&venueId=${venueId}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (!data.isAvailable) {
+                            var conflictList = document.getElementById('conflictList');
+                            conflictList.innerHTML = '<ul class="list-group">';
+                            data.conflictingEvents.forEach(event => {
+                                conflictList.innerHTML += `
+                                    <li class="list-group-item">
+                                        <strong>${event.eventName}</strong><br>
+                                        Start: ${new Date(event.eventStartDate).toLocaleString()}<br>
+                                        End: ${new Date(event.eventEndDate).toLocaleString()}
+                                    </li>`;
+                            });
+                            conflictList.innerHTML += '</ul>';
+                            
+                            var modal = new bootstrap.Modal(document.getElementById('dateConflictModal'));
+                            modal.show();
+                            
+                            document.getElementById('startDateError').textContent = 'Selected dates conflict with existing events';
+                            document.getElementById('endDateError').textContent = 'Selected dates conflict with existing events';
+                        } else {
+                            document.getElementById('startDateError').textContent = '';
+                            document.getElementById('endDateError').textContent = '';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        document.getElementById('startDateError').textContent = 'Error checking date availability';
+                    });
+            }
+        }
+    </script>
+}

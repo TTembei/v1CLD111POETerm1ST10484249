@@ -1,0 +1,146 @@
+@model CLD111POETerm1ST10484249.Models.VenueSearchViewModel
+
+@{
+    ViewData["Title"] = "Search Venues";
+    Layout = "_LayoutAdmin";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-action">
+                Search Venue
+            </div>
+            <div class="card-content">
+                <div class="table-responsive">
+                    <div class="card-body">
+
+                        <form method="get" class="row g-3">
+                            <div class="col-md-4">
+                                <label class="form-label">Search Term</label>
+                                <input type="text" class="form-control" name="SearchTerm" value="@Model.SearchTerm" placeholder="Search by name or description">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Location</label>
+                                <input type="text" class="form-control" name="Location" value="@Model.Location" placeholder="Enter location">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Status</label>
+                                <select class="form-control" name="Status">
+                                    <option value="">All</option>
+                                    @foreach (var status in Model.VenueStatuses)
+                                    {
+                                        <option value="@status.StatusName" selected="@(Model.Status == status.StatusName)">
+                                            @status.StatusName
+                                        </option>
+                                    }
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Minimum Capacity</label>
+                                <input type="number" class="form-control" name="MinCapacity" value="@Model.MinCapacity" placeholder="Enter minimum capacity">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Maximum Capacity</label>
+                                <input type="number" class="form-control" name="MaxCapacity" value="@Model.MaxCapacity" placeholder="Enter maximum capacity">
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary pull-right">Search</button>
+                            </div>
+                        </form>
+                    
+                    </div>
+                    <hr />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-action">
+                Search Results
+            </div>
+            <div class="card-content">
+                <div class="table-responsive">
+                    <div class="card-body">
+                        @if (Model.Results.Any())
+                        {
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card mb-4">
+                                        <div class="card-header pb-0">
+                                            <h6>Search Results</h6>
+                                        </div>
+                                        <div class="card-body px-0 pt-0 pb-2">
+                                            <div class="table-responsive p-0">
+                                                <table class="table align-items-center mb-0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Venue Name</th>
+                                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Location</th>
+                                                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Capacity</th>
+                                                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
+                                                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Actions</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        @foreach (var venue in Model.Results)
+                                                        {
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex px-2 py-1">
+                                                                        <div class="d-flex flex-column justify-content-center">
+                                                                            <h6 class="mb-0 text-sm">@venue.VenueName</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <p class="text-sm font-weight-bold mb-0">@venue.Location</p>
+                                                                </td>
+                                                                <td class="align-middle text-center text-sm">
+                                                                    <span class="badge badge-sm bg-gradient-info">@venue.Capacity</span>
+                                                                </td>
+                                                                <td class="align-middle text-center">
+                                                                    <span class="badge badge-sm bg-gradient-@(venue.VenueStatus.StatusName == "Available" ? "success" : "warning")">
+                                                                        @venue.VenueStatus.StatusName
+                                                                    </span>
+                                                                </td>
+                                                                <td class="align-middle text-center">
+                                                                    <a asp-action="Details" asp-controller="Venues" asp-route-id="@venue.VenueId" class="btn btn-link text-secondary mb-0">
+                                                                        <i class="fa fa-eye text-xs"></i>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        }
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        else if (Model.SearchTerm != null || Model.Location != null || Model.Status != null || Model.MinCapacity.HasValue || Model.MaxCapacity.HasValue)
+                        {
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="alert alert-info">
+                                        No venues found matching your search criteria.
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <hr />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

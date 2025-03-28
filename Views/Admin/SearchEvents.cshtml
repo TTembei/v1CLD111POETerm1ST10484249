@@ -1,0 +1,141 @@
+@model CLD111POETerm1ST10484249.Models.EventSearchViewModel
+
+@{
+    ViewData["Title"] = "Search Events";
+    Layout = "_LayoutAdmin";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-action">
+                Search Events
+            </div>
+            <div class="card-content">
+                <div class="table-responsive">
+                    <div class="card-body">
+                        <form method="get" class="row g-3">
+                            <div class="col-md-4">
+                                <label class="form-label">Search Term</label>
+                                <input type="text" class="form-control" name="SearchTerm" value="@Model.SearchTerm" placeholder="Search by name or description">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Event Type</label>
+                                <select class="form-control" name="EventType">
+                                    <option value="">All Types</option>
+                                    @foreach (var type in ViewBag.EventTypes ?? new List<string>())
+                                    {
+                                        <option value="@type" selected="@(Model.EventType == type)">@type</option>
+                                    }
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Venue Name</label>
+                                <input type="text" class="form-control" name="VenueName" value="@Model.VenueName" placeholder="Enter venue name">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Start Date</label>
+                                <input type="date" class="form-control" name="StartDate" value="@(Model.StartDate?.ToString("yyyy-MM-dd"))">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">End Date</label>
+                                <input type="date" class="form-control" name="EndDate" value="@(Model.EndDate?.ToString("yyyy-MM-dd"))">
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary pull-right">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                    <hr />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-action">
+                Search Results
+            </div>
+            <div class="card-content">
+                <div class="table-responsive">
+                    @if (Model.Results.Any())
+                    {
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card mb-4">
+                                    <div class="card-header pb-0">
+                                        <h6>Search Results</h6>
+                                    </div>
+                                    <div class="card-body px-0 pt-0 pb-2">
+                                        <div class="table-responsive p-0">
+                                            <table class="table align-items-center mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Event Name</th>
+                                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Type</th>
+                                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Venue</th>
+                                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Start Date</th>
+                                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">End Date</th>
+                                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @foreach (var evt in Model.Results)
+                                                    {
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex px-2 py-1">
+                                                                    <div class="d-flex flex-column justify-content-center">
+                                                                        <h6 class="mb-0 text-sm">@evt.EventName</h6>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <p class="text-sm font-weight-bold mb-0">@evt.EventType.TypeName</p>
+                                                            </td>
+                                                            <td class="align-middle text-center text-sm">
+                                                                <span class="badge badge-sm bg-gradient-info">@evt.Venue.VenueName</span>
+                                                            </td>
+                                                            <td class="align-middle text-center">
+                                                                <span class="text-secondary text-xs font-weight-bold">@evt.EventStartDate</span>
+                                                            </td>
+                                                            <td class="align-middle text-center">
+                                                                <span class="text-secondary text-xs font-weight-bold">@evt.EventEndDate</span>
+                                                            </td>
+                                                            <td class="align-middle text-center">
+                                                                <a asp-action="Details" asp-controller="Events" asp-route-id="@evt.EventId" class="btn btn-link text-secondary mb-0">
+                                                                    <i class="fa fa-eye text-xs"></i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    else if (Model.SearchTerm != null || Model.EventType != null || Model.VenueName != null || Model.StartDate.HasValue || Model.EndDate.HasValue)
+                    {
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="alert alert-info">
+                                    No events found matching your search criteria.
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    <hr />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

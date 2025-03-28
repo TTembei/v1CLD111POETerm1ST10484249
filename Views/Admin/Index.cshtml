@@ -1,0 +1,207 @@
+﻿@model CLD111POETerm1ST10484249.Models.DashboardViewModel
+
+@{
+    ViewData["Title"] = "Admin Dashboard";
+    Layout = "_LayoutAdmin";
+}
+
+@functions {
+    private string GetStatusColor(string status)
+    {
+        return status switch
+        {
+            "Pending" => "warning",
+            "Confirmed" => "success",
+            "Cancelled" => "danger",
+            "Completed" => "info",
+            "Available" => "success",
+            "Occupied" => "warning",
+            "Maintenance" => "danger",
+            _ => "secondary"
+        };
+    }
+}
+
+<div class="container-fluid py-4">
+    <!-- Statistics Cards -->
+    <div class="row row-cols-4 row-cols-md-2 row-cols-lg-4 g-4">
+  
+            <div class="col-lg-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-action p-4">
+                    <h5 class="fw-bold">Total Venues</h5>
+                </div>
+                <div class="card-content">
+                    <div class="table-responsive p-3">
+                        <h1 class="fw-bolder mb-0">@Model.TotalVenues</h1>
+                        <hr />
+                        <div class="icon rounded-circle bg-primary text-white p-3 mt-3">
+                            <i class="fa fa-building"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-action p-4">
+                    <h5 class="fw-bold">Available Venues</h5>
+                </div>
+                <div class="card-content">
+                    <div class="table-responsive p-3">
+                        <h1 class="fw-bolder mb-0">@Model.AvailableVenues</h1>
+                        <hr />
+                        <div class="icon rounded-circle bg-success text-white p-3 mt-3">
+                            <i class="fa fa-check-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-action p-4">
+                    <h5 class="fw-bold">Total Events</h5>
+                </div>
+                <div class="card-content">
+                    <div class="table-responsive p-3">
+                        <h1 class="fw-bolder mb-0">@Model.TotalEvents</h1>
+                        <hr />
+                        <div class="icon rounded-circle bg-warning text-white p-3 mt-3">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-action p-4">
+                    <h5 class="fw-bold">Total Bookings</h5>
+                </div>
+                <div class="card-content">
+                    <div class="table-responsive p-3">
+                        <h1 class="fw-bolder mb-0">@Model.TotalBookings</h1>
+                        <hr />
+                        <div class="icon rounded-circle bg-info text-white p-3 mt-3">
+                            <i class="fa fa-bookmark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charts and Tables -->
+    <div class="row mt-4 g-4">
+        <div class="col-lg-8">
+            <div class="card shadow-sm border-0">
+                <div class="card-action p-3">
+                    <h5 class="fw-bold">Venue Utilization</h5>
+                </div>
+                <div class="card-content">
+                    <div class="table-responsive p-3">
+                        <canvas id="venueUtilizationChart" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-action p-3">
+                    <h5 class="fw-bold">Upcoming Events</h5>
+                </div>
+                <div class="card-content">
+                    <div class="table-responsive p-3">
+                        <ul class="list-group list-group-flush">
+                            @foreach (var evt in Model.UpcomingEvents)
+                            {
+                                <li class="list-group-item">
+                                    <h6 class="fw-bold mb-1">@evt.EventName</h6>
+                                    <small class="text-muted">@evt.EventStartDate</small>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card shadow-sm border-0">
+                <div class="card-action p-3">
+                    <h5 class="fw-bold">Recent Bookings</h5>
+                </div>
+                <div class="card-content">
+                    <div class="table-responsive p-3">
+                        <table class="table align-middle mb-0 table-hover">
+                            <thead class="bg-light">
+                                <tr>
+                                    <th>Venue</th>
+                                    <th>Event</th>
+                                    <th class="text-center">Date</th>
+                                    <th class="text-center">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var booking in Model.RecentBookings)
+                                {
+                                    <tr>
+                                        <td>@booking.Venue.VenueName</td>
+                                        <td>@booking.Event.EventName</td>
+                                        <td class="text-center"><span class="badge bg-success">@booking.BookingDate</span></td>
+                                        <td class="align-middle text-center">
+                                            <span class="badge badge-sm bg-gradient-@(GetStatusColor(booking.BookingStatus?.StatusName ?? "Unknown"))">
+                                                @(booking.BookingStatus?.StatusName ?? "Unknown")
+                                            </span>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Venue Utilization Chart
+        var ctx = document.getElementById('venueUtilizationChart').getContext('2d');
+        var venueData = @Html.Raw(Json.Serialize(Model.VenueUtilization));
+        
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: venueData.map(v => v.venueName),
+                datasets: [{
+                    label: 'Utilization Rate (%)',
+                    data: venueData.map(v => (v.utilizationRate * 100).toFixed(1)),
+                    backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+    </script>
+}
+

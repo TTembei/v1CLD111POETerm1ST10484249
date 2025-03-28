@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+
+<section id="about">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</section>
+
+
+
+<section id="contact" class="section-bg wow fadeInUp">
+
+    <div class="container">
+
+        <div class="section-header">
+            <h2>Login</h2>
+            <p>Login as a Customer or Admin.</p>
+        </div>
+
+        <div class="row contact-info">
+
+        </div>
+
+        <div class="form">
+            <div>
+                @if (ViewBag.Error != null)
+                {
+                    <p style="color: red">@ViewBag.Error</p>
+                }
+
+            </div>
+
+            <form method="post" asp-controller="Users" asp-action="Login" role="form" class="contactForm">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" name="Username" required class="form-control" placeholder="Username" value="admin" />
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="password" class="form-control" name="Password" placeholder="Password" value="admin123" />
+                        <div class="validation"></div>
+                    </div>
+                </div>
+
+                <div class="text-center"><button type="submit">Login</button></div>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+@* Login Details 
+User: admin", "admin123", "Admin",
+User: john_tim", "password456", "User",
+User: manager", "manager789", "Manager"
+ *@

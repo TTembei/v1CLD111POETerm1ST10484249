@@ -1,0 +1,159 @@
+@model CLD111POETerm1ST10484249.Models.BookingSearchViewModel
+
+@{
+    ViewData["Title"] = "Search Bookings";
+    Layout = "_LayoutAdmin";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-action">
+                Search Bookings
+            </div>
+            <div class="card-content">
+                <div class="table-responsive">
+                    <div class="card-body">
+                        <form method="get" class="row g-3">
+                            <div class="col-md-4">
+                                <label class="form-label">Search Term</label>
+                                <input type="text" class="form-control" name="SearchTerm" value="@Model.SearchTerm" placeholder="Search by event or venue name">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Venue Name</label>
+                                <input type="text" class="form-control" name="VenueName" value="@Model.VenueName" placeholder="Enter venue name">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Event Name</label>
+                                <input type="text" class="form-control" name="EventName" value="@Model.EventName" placeholder="Enter event name">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Booking Date From</label>
+                                <input type="date" class="form-control" name="BookingDateFrom" value="@(Model.BookingDateFrom?.ToString("yyyy-MM-dd"))">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Booking Date To</label>
+                                <input type="date" class="form-control" name="BookingDateTo" value="@(Model.BookingDateTo?.ToString("yyyy-MM-dd"))">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Status</label>
+                                <select class="form-control" name="Status">
+                                    <option value="">All</option>
+                                    @foreach (var status in Model.BookingStatuses)
+                                    {
+                                        <option value="@status.StatusName" selected="@(Model.Status == status.StatusName)">
+                                            @status.StatusName
+                                        </option>
+                                    }
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                    <hr />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-action">
+                Search Results
+            </div>
+            <div class="card-content">
+                <div class="table-responsive">
+                    @if (Model.Results.Any())
+                    {
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card mb-4">
+                                    <div class="card-header pb-0">
+                                        <h6>Search Results</h6>
+                                    </div>
+                                    <div class="card-body px-0 pt-0 pb-2">
+                                        <div class="table-responsive p-0">
+                                            <table class="table align-items-center mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Event</th>
+                                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Venue</th>
+                                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Booking Date</th>
+                                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
+                                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @foreach (var booking in Model.Results)
+                                                    {
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex px-2 py-1">
+                                                                    <div class="d-flex flex-column justify-content-center">
+                                                                        <h6 class="mb-0 text-sm">@booking.Event.EventName</h6>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <p class="text-sm font-weight-bold mb-0">@booking.Venue.VenueName</p>
+                                                            </td>
+                                                            <td class="align-middle text-center text-sm">
+                                                                <span class="badge badge-sm bg-gradient-info">@booking.BookingDate</span>
+                                                            </td>
+                                                            <td class="align-middle text-center">
+                                                                <span class="badge badge-sm bg-gradient-@(GetStatusColor(@booking.BookingStatus.StatusName))">
+                                                        @booking.BookingStatus.StatusName
+                                                        </span>
+                                                            </td>
+                                                            <td class="align-middle text-center">
+                                                                <a asp-action="Details" asp-controller="Bookings" asp-route-id="@booking.BookingId" class="btn btn-link text-secondary mb-0">
+                                                                    <i class="fa fa-eye text-xs"></i>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    else if (Model.SearchTerm != null || Model.VenueName != null || Model.EventName != null ||
+                    Model.BookingDateFrom.HasValue || Model.BookingDateTo.HasValue || Model.Status != null)
+                    {
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="alert alert-info">
+                                    No bookings found matching your search criteria.
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    <hr />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@functions {
+    private string GetStatusColor(string status)
+    {
+        return status switch
+        {
+            "Pending" => "warning",
+            "Confirmed" => "success",
+            "Rejected" => "danger",
+            "Completed" => "info",
+            _ => "secondary"
+        };
+    }
+} 

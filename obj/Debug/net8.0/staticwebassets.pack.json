@@ -1,0 +1,985 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CLD111POETerm1ST10484249.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CLD111POETerm1ST10484249.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\cssPrint\\invoice.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\cssPrint\\invoice.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\cssPrint\\invoice.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\cssPrint\\invoice.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\css\\bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\css\\custom-styles.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\css\\custom-styles.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\css\\materialize.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\css\\materialize.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\font-awesome\\fonts\\fontawesome-webfontba72.eot",
+      "PackagePath": "staticwebassets\\assetsAdmin\\font-awesome\\fonts\\fontawesome-webfontba72.eot"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\font-awesome\\fonts\\fontawesome-webfontba72.svg",
+      "PackagePath": "staticwebassets\\assetsAdmin\\font-awesome\\fonts\\fontawesome-webfontba72.svg"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\font-awesome\\fonts\\fontawesome-webfontba72.ttf",
+      "PackagePath": "staticwebassets\\assetsAdmin\\font-awesome\\fonts\\fontawesome-webfontba72.ttf"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\font-awesome\\fonts\\fontawesome-webfontba72.woff",
+      "PackagePath": "staticwebassets\\assetsAdmin\\font-awesome\\fonts\\fontawesome-webfontba72.woff"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\font-awesome\\fonts\\fontawesome-webfontd41d.eot",
+      "PackagePath": "staticwebassets\\assetsAdmin\\font-awesome\\fonts\\fontawesome-webfontd41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\fonts\\glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\fonts\\glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\fonts\\glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\fonts\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\fonts\\glyphicons-halflings-regulard41d.eot",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\glyphicons-halflings-regulard41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\img\\EasyBusinessLog.png",
+      "PackagePath": "staticwebassets\\assetsAdmin\\img\\EasyBusinessLog.png"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\img\\bg-img.jpg",
+      "PackagePath": "staticwebassets\\assetsAdmin\\img\\bg-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\Lightweight-Chart\\README.md",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\Lightweight-Chart\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\Lightweight-Chart\\chart.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\Lightweight-Chart\\chart.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\Lightweight-Chart\\cssCharts.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\Lightweight-Chart\\cssCharts.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\Lightweight-Chart\\index - Copy.html",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\Lightweight-Chart\\index - Copy.html"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\Lightweight-Chart\\index.html",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\Lightweight-Chart\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\Lightweight-Chart\\jquery.chart.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\Lightweight-Chart\\jquery.chart.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\Lightweight-Chart\\jquery.chart.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\Lightweight-Chart\\jquery.chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\chart-data.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\chart-data.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\chart.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\custom-scripts.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\custom-scripts.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\dataTables\\dataTables.bootstrap.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\dataTables\\dataTables.bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\dataTables\\dataTables.bootstrap.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\dataTables\\dataTables.bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\dataTables\\jquery.dataTables.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\dataTables\\jquery.dataTables.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\easypiechart-data.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\easypiechart-data.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\easypiechart.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\easypiechart.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\jquery-1.10.2.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\jquery-1.10.2.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\jquery.metisMenu.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\jquery.metisMenu.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\jquery\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\jquery\\jquery.min.map",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\jquery\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\jquery\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\jquery\\jquery.slim.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\jquery\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\jquery\\jquery.slim.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\jquery\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\jquery\\jquery.slim.min.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\morris\\morris-0.4.3.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\morris\\morris-0.4.3.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\morris\\morris.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\morris\\morris.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\morris\\raphael-2.1.0.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\morris\\raphael-2.1.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\CHANGELOG.md",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\CHANGELOG.md"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\icons\\default\\icons.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\icons\\default\\icons.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\langs\\README.md",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\langs\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\license.txt",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\license.txt"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\models\\dom\\model.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\models\\dom\\model.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\advlist\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\advlist\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\anchor\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\anchor\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\autolink\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\autolink\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\autoresize\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\autoresize\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\autosave\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\autosave\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\charmap\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\charmap\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\code\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\code\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\codesample\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\codesample\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\directionality\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\directionality\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\emoticons\\js\\emojiimages.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\emoticons\\js\\emojiimages.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\emoticons\\js\\emojiimages.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\emoticons\\js\\emojiimages.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\emoticons\\js\\emojis.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\emoticons\\js\\emojis.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\emoticons\\js\\emojis.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\emoticons\\js\\emojis.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\emoticons\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\emoticons\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\fullscreen\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\fullscreen\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\help\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\help\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\image\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\image\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\importcss\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\importcss\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\insertdatetime\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\insertdatetime\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\link\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\link\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\lists\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\lists\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\media\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\media\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\nonbreaking\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\nonbreaking\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\pagebreak\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\pagebreak\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\preview\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\preview\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\quickbars\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\quickbars\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\save\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\save\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\searchreplace\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\searchreplace\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\table\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\table\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\template\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\template\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\visualblocks\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\visualblocks\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\visualchars\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\visualchars\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\plugins\\wordcount\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\plugins\\wordcount\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\skins\\content\\dark\\content.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\skins\\content\\dark\\content.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\skins\\content\\default\\content.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\skins\\content\\default\\content.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\skins\\content\\document\\content.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\skins\\content\\document\\content.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\skins\\content\\tinymce-5-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\skins\\content\\tinymce-5-dark\\content.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\skins\\content\\tinymce-5\\content.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\skins\\content\\tinymce-5\\content.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\skins\\content\\writer\\content.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\skins\\content\\writer\\content.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\skins\\ui\\oxide-dark\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\skins\\ui\\oxide-dark\\content.inline.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\skins\\ui\\oxide-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\skins\\ui\\oxide-dark\\content.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\skins\\ui\\oxide\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\skins\\ui\\oxide\\content.inline.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\skins\\ui\\oxide\\content.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\skins\\ui\\oxide\\content.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\skins\\ui\\oxide\\skin.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\skins\\ui\\oxide\\skin.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\skins\\ui\\tinymce-5\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\skins\\ui\\tinymce-5\\content.inline.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\skins\\ui\\tinymce-5\\content.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\skins\\ui\\tinymce-5\\content.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\themes\\silver\\theme.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\themes\\silver\\theme.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\tinymce.d.ts",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\tinymce.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\js\\tinymce\\tinymce.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\tinymce\\tinymce.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\LICENSE",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\README.md",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\css\\materialize.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\css\\materialize.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\css\\materialize.min.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\css\\materialize.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Bold.eot",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Bold.eot"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Bold.ttf",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Bold.woff",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Bold.woff2",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Bold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Light.eot",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Light.eot"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Light.ttf",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Light.woff",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Light.woff"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Light.woff2",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Light.woff2"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Medium.eot",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Medium.eot"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Medium.ttf",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Medium.woff",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Medium.woff"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Medium.woff2",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Medium.woff2"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Regular.eot",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Regular.ttf",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Regular.woff",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Regular.woff2",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Regular.woff2"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Thin.eot",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Thin.eot"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Thin.ttf",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Thin.woff",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Thin.woff"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Thin.woff2",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\fonts\\roboto\\Roboto-Thin.woff2"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\js\\materialize.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\js\\materialize.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\assetsAdmin\\materialize\\js\\materialize.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\materialize\\js\\materialize.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\css\\scss-files.txt",
+      "PackagePath": "staticwebassets\\css\\scss-files.txt"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\img\\about-bg.jpg",
+      "PackagePath": "staticwebassets\\img\\about-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\img\\addImage.jpg",
+      "PackagePath": "staticwebassets\\img\\addImage.jpg"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\img\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\img\\apple-touch-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\img\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\img\\intro-bg.jpg",
+      "PackagePath": "staticwebassets\\img\\intro-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\img\\subscribe-bg.jpg",
+      "PackagePath": "staticwebassets\\img\\subscribe-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\img\\venue-info-bg.jpg",
+      "PackagePath": "staticwebassets\\img\\venue-info-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\animate\\animate.css",
+      "PackagePath": "staticwebassets\\lib\\animate\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\animate\\animate.min.css",
+      "PackagePath": "staticwebassets\\lib\\animate\\animate.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\easing\\easing.js",
+      "PackagePath": "staticwebassets\\lib\\easing\\easing.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\easing\\easing.min.js",
+      "PackagePath": "staticwebassets\\lib\\easing\\easing.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\font-awesome\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\font-awesome\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\font-awesome\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\font-awesome\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\font-awesome\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\font-awesome\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\jquery\\jquery-migrate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\jquery-migrate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\owlcarousel\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\owlcarousel\\assets\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.default.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.green.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.green.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\owlcarousel\\assets\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.video.play.png"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\owlcarousel\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\owl.carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\owlcarousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\superfish\\hoverIntent.js",
+      "PackagePath": "staticwebassets\\lib\\superfish\\hoverIntent.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\superfish\\superfish.js",
+      "PackagePath": "staticwebassets\\lib\\superfish\\superfish.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\superfish\\superfish.min.js",
+      "PackagePath": "staticwebassets\\lib\\superfish\\superfish.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\venobox\\venobox.css",
+      "PackagePath": "staticwebassets\\lib\\venobox\\venobox.css"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\venobox\\venobox.js",
+      "PackagePath": "staticwebassets\\lib\\venobox\\venobox.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\venobox\\venobox.min.js",
+      "PackagePath": "staticwebassets\\lib\\venobox\\venobox.min.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\wow\\wow.js",
+      "PackagePath": "staticwebassets\\lib\\wow\\wow.js"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\source\\repos\\CLD111POETerm1ST10484249\\CLD111POETerm1ST10484249\\wwwroot\\lib\\wow\\wow.min.js",
+      "PackagePath": "staticwebassets\\lib\\wow\\wow.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CLD111POETerm1ST10484249.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CLD111POETerm1ST10484249.props",
+      "PackagePath": "build\\CLD111POETerm1ST10484249.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CLD111POETerm1ST10484249.props",
+      "PackagePath": "buildMultiTargeting\\CLD111POETerm1ST10484249.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CLD111POETerm1ST10484249.props",
+      "PackagePath": "buildTransitive\\CLD111POETerm1ST10484249.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

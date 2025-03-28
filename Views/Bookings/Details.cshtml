@@ -1,0 +1,172 @@
+﻿@model CLD111POETerm1ST10484249.Repository.Models.Booking
+@inject UserSessionHelper UserSessionHelper
+@{
+    var user = UserSessionHelper.GetLoggedInUser();
+}
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<section id="about">
+    <div class="container">
+        <div class="row"></div>
+    </div>
+</section>
+
+<main id="main">
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Booking</h2>
+                    <p>Login as an Admin to Add, Edit, or Delete a Venue</p>
+                </div>
+                <div class="col-lg-6">
+                    @if (user != null && user.Role == "Admin")
+                    {
+                        <a href="#" class="btn btn-danger rounded-pill" data-bs-toggle="modal" data-bs-target="#editBookingModal">Update</a>
+                    }
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hotels" class="py-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Booking Details</h2>
+            </div>
+            <div class="row">
+                <!-- Image Column -->
+                <div class="col-md-4">
+                    <div class="hotel-img">
+                        <h3>
+                            <a asp-action="Details" asp-route-id="@Model.VenueId">
+                                @Model.Venue.VenueName
+                            </a>
+                        </h3>
+                        <a asp-action="Details" asp-route-id="@Model.VenueId">
+                            <img src="@Model.Venue.ImageUrl" alt="@Model.Venue.VenueName" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Details Column -->
+                <div class="col-md-8">
+                    <div class="mb-2">
+                        <strong>@Html.DisplayNameFor(model => model.Description):</strong>
+                        <p>@Model.Description</p>
+                    </div>
+
+                    <div class="mb-2">
+                        <strong>@Html.DisplayNameFor(model => model.BookingDate):</strong>
+                        <p>@Model.BookingDate</p>
+                    </div>
+
+                    <div class="mb-2">
+                        <strong>@Html.DisplayNameFor(model => model.BookingStatus):</strong>
+                        <p>@Model.BookingStatus.StatusName</p>
+                    </div>
+
+                    <div class="mb-2">
+                        <strong>@Html.DisplayNameFor(model => model.Event):</strong>
+                        <p>@Model.Event.EventName</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Edit Booking Modal -->
+<div class="modal fade" id="editBookingModal" tabindex="-1" aria-labelledby="editBookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editBookingModalLabel">Edit Booking</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="editBookingForm" asp-action="Edit" method="post">
+                    <input  name="BookingId" value="@Model.BookingId" />
+                    <input  name="VenueId" value="@Model.VenueId" />
+                    <input  name="EventId" value="@Model.EventId" />
+
+                    <div class="mb-3">
+                        <label class="form-label">Description</label>
+                        <textarea class="form-control" name="Description" rows="3">@Model.Description</textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Booking Date</label>
+                        <input type="date" class="form-control" name="BookingDate" value="@Model.BookingDate" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Status</label>
+                        <select class="form-select" name="StatusId">
+                            @foreach (var status in ViewBag.BookingStatuses)
+                            {
+                                <option value="@status.StatusId" selected="@(status.StatusId == Model.BookingStatusId)">
+                                    @status.StatusName
+                                </option>
+                            }
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Event</label>
+                        <select class="form-select" name="EventId">
+                            @foreach (var evt in ViewBag.Events)
+                            {
+                                <option value="@evt.EventId" selected="@(evt.EventId == Model.EventId)">
+                                    @evt.EventName
+                                </option>
+                            }
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="submit" form="editBookingForm" class="btn btn-primary">Save Changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Handle form submission
+            $('#editBookingForm').on('submit', function(e) {
+                e.preventDefault();
+                
+                $.ajax({
+                    url: $(this).attr('action'),
+                    type: 'POST',
+                    data: $(this).serialize(),
+                    success: function(response) {
+                        if (response.success) {
+                            // Close modal and refresh page
+                            $('#editBookingModal').modal('hide');
+                            location.reload();
+                        } else {
+                            // Show error message
+                            alert(response.message || 'An error occurred while updating the booking.');
+                        }
+                    },
+                    error: function() {
+                        alert('An error occurred while updating the booking.');
+                    }
+                });
+            });
+        });
+    </script>
+}
+
+
+
+
+

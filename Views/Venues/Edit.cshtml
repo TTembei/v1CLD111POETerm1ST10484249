@@ -1,0 +1,161 @@
+﻿@model CLD111POETerm1ST10484249.Repository.Models.Venue
+@using CLD111POETerm1ST10484249.Repository.Models
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+@inject UserSessionHelper UserSessionHelper
+@{
+    var user = UserSessionHelper.GetLoggedInUser();
+}
+
+
+<section id="about">
+    <div class="container">
+        <div class="row"></div>
+    </div>
+</section>
+
+<main id="main">
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Venues</h2>
+                    <p>Login as an Admin to Add, Edit, or Delete a Venue</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hotels" class="py-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Venue Details</h2>
+                <p>Edit Venue</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <form method="post" asp-action="Edit" enctype="multipart/form-data" class="p-4 border rounded bg-white">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="VenueId" />
+                        <input type="hidden" asp-for="ImageUrl" />
+
+                        <div class="form-group mb-3">
+                            <label asp-for="VenueName" class="form-label"></label>
+                            <input asp-for="VenueName" class="form-control" />
+                            <span asp-validation-for="VenueName" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Description" class="form-label"></label>
+                            <textarea asp-for="Description" class="form-control"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Location" class="form-label"></label>
+                            <input asp-for="Location" class="form-control" />
+                            <span asp-validation-for="Location" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Capacity" class="form-label"></label>
+                            <input asp-for="Capacity" class="form-control" />
+                            <span asp-validation-for="Capacity" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="ImageFile" class="control-label">Venue Profile Image</label>
+                            <input type="file" class="form-control" asp-for="ImageFile" />
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="VenueStatusId" class="form-label"></label>
+                            <select asp-for="VenueStatusId" class="form-control" asp-items="ViewBag.VenueStatusId"></select>
+                            <span asp-validation-for="VenueStatusId" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group text-center">
+                            <input type="submit" value="Save" class="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-8">
+                    <section id="venue" class="py-3">
+                        <div class="container-fluid venue-gallery-container">
+                            <div class="row g-2">
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="venue-gallery">
+                                        <button data-bs-toggle="modal" data-bs-target="#addVenueImages" class="btn btn-primary w-100 h-100 d-flex align-items-center justify-content-center" data-gall="venue-gallery">
+                                            <i class="fa fa-plus"></i> Add
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="venue-gallery">
+                                        <a href="@Model.ImageUrl" class="venobox" data-gall="venue-gallery">
+                                            <img src="@Model.ImageUrl" class="img-fluid rounded" alt="Venue Image">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                @if (Model?.VeneuImages != null && Model.VeneuImages.Any())
+                                {
+                                    foreach (var img in Model.VeneuImages.Where(p => p.VenueId == Model.VenueId))
+                                    {
+                                        <div class="col-lg-3 col-md-4">
+                                            <div class="venue-gallery">
+                                                <a href="@img.ImageUrl" class="venobox" data-gall="venue-gallery">
+                                                    <img src="@img.ImageUrl" class="img-fluid rounded" alt="Venue Image">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                                else
+                                {
+                                    <p class="text-muted">No images available for this venue.</p>
+                                }
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<div class="modal fade" id="addVenueImages" tabindex="-1" aria-labelledby="addVenueImages" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addVenueModalLabel">Add Venue Images</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" asp-action="AddVenueImages" asp-controller="Venues" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <input type="hidden" name="id" value="@Model.VenueId" />
+                        <label class="control-label">Upload Images</label>
+                        <input name="ImageFiles" type="file" multiple class="form-control" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Upload</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
